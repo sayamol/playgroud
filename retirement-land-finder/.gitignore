@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+server/src/data/db.json
+server/**/cache/
+probe.mjs
+probe.mts
+*.log
+.DS_Store
+.vite/
+coverage/

@@ -1,0 +1,84 @@
+{
+  "bangkok": { "lat": 13.7563, "lng": 100.5018, "name": { "en": "Bangkok (reference point)", "th": "กรุงเทพฯ (จุดอ้างอิง)" } },
+  "regions": [
+    {
+      "id": "khaoyai",
+      "province": "นครราชสีมา",
+      "name": { "en": "Khao Yai / Nakhon Ratchasima", "th": "เขาใหญ่ / นครราชสีมา" },
+      "color": "#00B894",
+      "center": [14.6, 101.38],
+      "zoom": 11
+    },
+    {
+      "id": "huahin",
+      "province": "ประจวบคีรีขันธ์",
+      "name": { "en": "Hua Hin / Prachuap Khiri Khan", "th": "หัวหิน / ประจวบคีรีขันธ์" },
+      "color": "#0984E3",
+      "center": [12.5, 99.93],
+      "zoom": 11
+    },
+    {
+      "id": "chiangmai",
+      "province": "เชียงใหม่",
+      "name": { "en": "Chiang Mai", "th": "เชียงใหม่" },
+      "color": "#6C5CE7",
+      "center": [18.83, 98.95],
+      "zoom": 11
+    },
+    {
+      "id": "bkknat",
+      "province": "นครนายก",
+      "name": { "en": "Bangkok green belt (Nakhon Nayok / Kanchanaburi)", "th": "รอบกรุงเทพฯ (นครนายก / กาญจนบุรี)" },
+      "color": "#FD79A8",
+      "center": [14.05, 100.6],
+      "zoom": 9
+    }
+  ],
+  "pois": [
+    { "id": "ky-h1", "regionId": "khaoyai", "kind": "hospital", "name": { "en": "Kasemrad Pak Chong Hospital", "th": "รพ.เกษมราษฎร์ ปากช่อง" }, "lat": 14.7057, "lng": 101.4085 },
+    { "id": "ky-h2", "regionId": "khaoyai", "kind": "hospital", "name": { "en": "Pak Chong Nana Hospital", "th": "รพ.ปากช่องนานา" }, "lat": 14.7064, "lng": 101.4203 },
+    { "id": "ky-m1", "regionId": "khaoyai", "kind": "mall", "name": { "en": "Palio Khao Yai", "th": "พาลิโอ เขาใหญ่" }, "lat": 14.5225, "lng": 101.3948 },
+    { "id": "ky-m2", "regionId": "khaoyai", "kind": "mall", "name": { "en": "Makro Pak Chong", "th": "แม็คโคร ปากช่อง" }, "lat": 14.7174, "lng": 101.3989 },
+    { "id": "ky-k1", "regionId": "khaoyai", "kind": "market", "name": { "en": "Pak Chong Fresh Market", "th": "ตลาดสดปากช่อง" }, "lat": 14.7085, "lng": 101.4171 },
+    { "id": "ky-n1", "regionId": "khaoyai", "kind": "nature", "name": { "en": "Khao Yai National Park (HQ)", "th": "อุทยานแห่งชาติเขาใหญ่" }, "lat": 14.4403, "lng": 101.3723 },
+    { "id": "ky-n2", "regionId": "khaoyai", "kind": "nature", "name": { "en": "Lam Takhong Reservoir", "th": "อ่างเก็บน้ำลำตะคอง" }, "lat": 14.8846, "lng": 101.5533 },
+    { "id": "ky-n3", "regionId": "khaoyai", "kind": "nature", "name": { "en": "Thongsomboon Club (foothills)", "th": "ทองสมบูรณ์คลับ" }, "lat": 14.5613, "lng": 101.4267 },
+    { "id": "ky-a1", "regionId": "khaoyai", "kind": "airport", "name": { "en": "Nakhon Ratchasima Airport", "th": "ท่าอากาศยานนครราชสีมา" }, "lat": 14.9495, "lng": 102.3134 },
+
+    { "id": "hh-h1", "regionId": "huahin", "kind": "hospital", "name": { "en": "Bangkok Hospital Hua Hin", "th": "รพ.กรุงเทพหัวหิน" }, "lat": 12.5563, "lng": 99.9602 },
+    { "id": "hh-h2", "regionId": "huahin", "kind": "hospital", "name": { "en": "Hua Hin Hospital (public)", "th": "รพ.หัวหิน" }, "lat": 12.5727, "lng": 99.9572 },
+    { "id": "hh-h3", "regionId": "huahin", "kind": "hospital", "name": { "en": "San Paulo Hospital Hua Hin", "th": "รพ.ซานเปาโล หัวหิน" }, "lat": 12.5602, "lng": 99.9575 },
+    { "id": "hh-m1", "regionId": "huahin", "kind": "mall", "name": { "en": "BluPort Hua Hin", "th": "บลูพอร์ต หัวหิน" }, "lat": 12.5479, "lng": 99.9596 },
+    { "id": "hh-m2", "regionId": "huahin", "kind": "mall", "name": { "en": "Market Village Hua Hin", "th": "มาร์เก็ต วิลเลจ หัวหิน" }, "lat": 12.5449, "lng": 99.9601 },
+    { "id": "hh-k1", "regionId": "huahin", "kind": "market", "name": { "en": "Chatchai Market", "th": "ตลาดฉัตรไชย" }, "lat": 12.5703, "lng": 99.9563 },
+    { "id": "hh-n1", "regionId": "huahin", "kind": "nature", "name": { "en": "Sam Roi Yot National Park", "th": "อุทยานแห่งชาติเขาสามร้อยยอด" }, "lat": 12.2, "lng": 99.96 },
+    { "id": "hh-n2", "regionId": "huahin", "kind": "nature", "name": { "en": "Pran Buri Forest Park", "th": "วนอุทยานปราณบุรี" }, "lat": 12.4041, "lng": 99.9812 },
+    { "id": "hh-n3", "regionId": "huahin", "kind": "nature", "name": { "en": "Hua Hin Beach", "th": "หาดหัวหิน" }, "lat": 12.5698, "lng": 99.9905 },
+    { "id": "hh-n4", "regionId": "huahin", "kind": "nature", "name": { "en": "Kaeng Krachan National Park", "th": "อุทยานแห่งชาติแก่งกระจาน" }, "lat": 12.9, "lng": 99.62 },
+    { "id": "hh-a1", "regionId": "huahin", "kind": "airport", "name": { "en": "Hua Hin Airport", "th": "ท่าอากาศยานหัวหิน" }, "lat": 12.6362, "lng": 99.9515 },
+
+    { "id": "cm-h1", "regionId": "chiangmai", "kind": "hospital", "name": { "en": "Chiang Mai Ram Hospital", "th": "รพ.เชียงใหม่ราม" }, "lat": 18.7962, "lng": 98.9753 },
+    { "id": "cm-h2", "regionId": "chiangmai", "kind": "hospital", "name": { "en": "Maharaj Nakorn Chiang Mai Hospital", "th": "รพ.มหาราชนครเชียงใหม่ (สวนดอก)" }, "lat": 18.7889, "lng": 98.9735 },
+    { "id": "cm-h3", "regionId": "chiangmai", "kind": "hospital", "name": { "en": "Lanna Hospital", "th": "รพ.ลานนา" }, "lat": 18.8103, "lng": 98.9905 },
+    { "id": "cm-m1", "regionId": "chiangmai", "kind": "mall", "name": { "en": "Central Festival Chiang Mai", "th": "เซ็นทรัลเฟสติวัล เชียงใหม่" }, "lat": 18.8072, "lng": 99.0175 },
+    { "id": "cm-m2", "regionId": "chiangmai", "kind": "mall", "name": { "en": "MAYA Lifestyle Shopping Center", "th": "มายา เชียงใหม่" }, "lat": 18.8016, "lng": 98.9672 },
+    { "id": "cm-m3", "regionId": "chiangmai", "kind": "mall", "name": { "en": "Central Airport Plaza", "th": "เซ็นทรัล แอร์พอร์ต เชียงใหม่" }, "lat": 18.7668, "lng": 98.9772 },
+    { "id": "cm-k1", "regionId": "chiangmai", "kind": "market", "name": { "en": "Warorot Market", "th": "ตลาดวโรรส (กาดหลวง)" }, "lat": 18.7902, "lng": 98.9995 },
+    { "id": "cm-n1", "regionId": "chiangmai", "kind": "nature", "name": { "en": "Doi Suthep-Pui National Park", "th": "อุทยานแห่งชาติดอยสุเทพ-ปุย" }, "lat": 18.8047, "lng": 98.9177 },
+    { "id": "cm-n2", "regionId": "chiangmai", "kind": "nature", "name": { "en": "Huay Tung Tao Lake", "th": "อ่างเก็บน้ำห้วยตึงเฒ่า" }, "lat": 18.8506, "lng": 98.9243 },
+    { "id": "cm-n3", "regionId": "chiangmai", "kind": "nature", "name": { "en": "Mae Sa Valley (Mae Rim)", "th": "แม่สา แม่ริม" }, "lat": 18.9167, "lng": 98.9 },
+    { "id": "cm-a1", "regionId": "chiangmai", "kind": "airport", "name": { "en": "Chiang Mai International Airport", "th": "ท่าอากาศยานเชียงใหม่" }, "lat": 18.7669, "lng": 98.9626 },
+
+    { "id": "bn-h1", "regionId": "bkknat", "kind": "hospital", "name": { "en": "Nakhon Nayok Hospital", "th": "รพ.นครนายก" }, "lat": 14.2058, "lng": 101.2151 },
+    { "id": "bn-h2", "regionId": "bkknat", "kind": "hospital", "name": { "en": "Paolo Hospital Kanchanaburi", "th": "รพ.เปาโล กาญจนบุรี" }, "lat": 14.0206, "lng": 99.5486 },
+    { "id": "bn-h3", "regionId": "bkknat", "kind": "hospital", "name": { "en": "MSMC Ongkharak (HRH Princess) ", "th": "ศูนย์การแพทย์ฯ องครักษ์" }, "lat": 14.1053, "lng": 100.9739 },
+    { "id": "bn-m1", "regionId": "bkknat", "kind": "mall", "name": { "en": "Robinson Lifestyle Kanchanaburi", "th": "โรบินสัน ไลฟ์สไตล์ กาญจนบุรี" }, "lat": 13.9985, "lng": 99.5602 },
+    { "id": "bn-m2", "regionId": "bkknat", "kind": "mall", "name": { "en": "Big C Nakhon Nayok", "th": "บิ๊กซี นครนายก" }, "lat": 14.2005, "lng": 101.2232 },
+    { "id": "bn-k1", "regionId": "bkknat", "kind": "market", "name": { "en": "Nakhon Nayok Municipal Market", "th": "ตลาดเทศบาลนครนายก" }, "lat": 14.2047, "lng": 101.2117 },
+    { "id": "bn-n1", "regionId": "bkknat", "kind": "nature", "name": { "en": "Nang Rong Waterfall", "th": "น้ำตกนางรอง" }, "lat": 14.3173, "lng": 101.3833 },
+    { "id": "bn-n2", "regionId": "bkknat", "kind": "nature", "name": { "en": "Sarika Waterfall / Wang Takrai", "th": "น้ำตกสาริกา / วังตะไคร้" }, "lat": 14.3181, "lng": 101.2861 },
+    { "id": "bn-n3", "regionId": "bkknat", "kind": "nature", "name": { "en": "Khun Dan Prakan Chon Dam", "th": "เขื่อนขุนด่านปราการชล" }, "lat": 14.3208, "lng": 101.2986 },
+    { "id": "bn-n4", "regionId": "bkknat", "kind": "nature", "name": { "en": "Erawan National Park", "th": "อุทยานแห่งชาติเอราวัณ" }, "lat": 14.3706, "lng": 99.1441 },
+    { "id": "bn-n5", "regionId": "bkknat", "kind": "nature", "name": { "en": "River Kwai (Kanchanaburi)", "th": "แม่น้ำแคว กาญจนบุรี" }, "lat": 14.0415, "lng": 99.5031 }
+  ]
+}
