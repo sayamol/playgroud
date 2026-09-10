@@ -6,6 +6,7 @@ import { t } from '../i18n';
 import { baht, km, loc, pct, hrs } from '../lib/format';
 import { score, scoreColor, FACTOR_KEYS } from '../lib/scoring';
 import { estimateAllInCost } from '../lib/cost';
+import { hasRealSourceUrl, mapsHref } from '../lib/links';
 import type { AppraisalInfo, Weights } from '../types';
 
 export function ListingDetail() {
@@ -217,9 +218,13 @@ export function ListingDetail() {
                 {l.otherOffers.map((o) => (
                   <tr key={o.listingId}>
                     <td>
-                      <a href={o.sourceUrl} target="_blank" rel="noreferrer">
-                        {o.source} ↗
-                      </a>
+                      {l.sample ? (
+                        o.source
+                      ) : (
+                        <a href={o.sourceUrl} target="_blank" rel="noreferrer">
+                          {o.source} ↗
+                        </a>
+                      )}
                     </td>
                     <td style={{ textAlign: 'right' }}>{baht(o.priceThb)}</td>
                     <td style={{ textAlign: 'right' }}>
@@ -265,9 +270,21 @@ export function ListingDetail() {
         >
           {compareIds.includes(l.id) ? `✓ ${t('inCompare', lang)}` : `+ ${t('addCompare', lang)}`}
         </button>
-        <a className="btn ghost" href={l.sourceUrl} target="_blank" rel="noreferrer">
-          {t('viewSource', lang)} ↗
-        </a>
+        {hasRealSourceUrl(l) ? (
+          <a className="btn ghost" href={l.sourceUrl} target="_blank" rel="noreferrer">
+            {t('viewSource', lang)} ↗
+          </a>
+        ) : (
+          <a
+            className="btn ghost"
+            href={mapsHref(l.lat, l.lng)}
+            target="_blank"
+            rel="noreferrer"
+            title={t('sampleNoSource', lang)}
+          >
+            🗺 {t('viewLocation', lang)} ↗
+          </a>
+        )}
       </div>
     </div>
   );

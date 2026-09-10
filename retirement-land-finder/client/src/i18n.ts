@@ -133,6 +133,11 @@ export const STR: Dict = {
     th: 'ล้างประกาศที่ดึงมาและกู้คืนชุดข้อมูลตัวอย่างหรือไม่?',
   },
   copyShareLink: { en: 'Copy share link', th: 'คัดลอกลิงก์แชร์' },
+  viewLocation: { en: 'View location on map', th: 'ดูตำแหน่งบนแผนที่' },
+  sampleNoSource: {
+    en: 'Sample listing — no real source page',
+    th: 'ข้อมูลตัวอย่าง — ไม่มีหน้าเว็บต้นทางจริง',
+  },
 };
 
 export function t(key: string, lang: Lang): string {

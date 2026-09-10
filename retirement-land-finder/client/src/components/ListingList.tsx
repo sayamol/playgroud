@@ -5,6 +5,7 @@ import { baht, km, loc } from '../lib/format';
 import { scoreColor } from '../lib/scoring';
 import { exportListings } from '../lib/excel';
 import { estimateAllInCost } from '../lib/cost';
+import { hasRealSourceUrl, mapsHref } from '../lib/links';
 import type { SortKey } from '../store';
 import type { Scored } from '../derived';
 
@@ -151,9 +152,21 @@ export function ListingList() {
             >
               {compareIds.includes(l.id) ? `✓ ${t('inCompare', lang)}` : `+ ${t('addCompare', lang)}`}
             </button>
-            <a className="btn ghost" href={l.sourceUrl} target="_blank" rel="noreferrer">
-              {t('viewSource', lang)} ↗
-            </a>
+            {hasRealSourceUrl(l) ? (
+              <a className="btn ghost" href={l.sourceUrl} target="_blank" rel="noreferrer">
+                {t('viewSource', lang)} ↗
+              </a>
+            ) : (
+              <a
+                className="btn ghost"
+                href={mapsHref(l.lat, l.lng)}
+                target="_blank"
+                rel="noreferrer"
+                title={t('sampleNoSource', lang)}
+              >
+                🗺 {t('viewLocation', lang)} ↗
+              </a>
+            )}
           </div>
         </div>
       ))}
